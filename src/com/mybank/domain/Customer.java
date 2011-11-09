@@ -7,6 +7,7 @@ package com.mybank.domain;
 public class Customer {
     private String nombre;
     private String apellido;
+    private Account account;
 
     /**
      * @return the nombre
@@ -34,6 +35,14 @@ public class Customer {
      */
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
 }

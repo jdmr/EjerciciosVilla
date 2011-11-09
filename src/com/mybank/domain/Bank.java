@@ -12,6 +12,10 @@ public class Bank {
         Customer customer = new Customer();
         customer.setNombre(nombre);
         customer.setApellido(apellido);
+        Account account = new Account();
+        account.setNombre(apellido + nombre);
+        customer.setAccount(account);
+        
         customers[numberOfCustomers++] = customer;
     }
     
