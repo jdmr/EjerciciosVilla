@@ -32,4 +32,9 @@ public class Director extends Administrador {
         hash = 47 * hash + (this.nombre != null ? this.nombre.hashCode() : 0);
         return hash;
     }
+
+    @Override
+    public String toString() {
+        return "Director{" + "nombre=" + nombre + '}';
+    }
 }
